@@ -1,4 +1,4 @@
-.con{max-width: none; widows: ;: 100%;}
+.con{max-width: none; width: 100%;}
 
 div[class*="col-"]{
     border: 1px solid blue; 
