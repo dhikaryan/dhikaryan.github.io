@@ -1,0 +1,9 @@
+.con{max-width: none; widows: ;: 100%;}
+
+div[class*="col-"]{
+    border: 1px solid blue; 
+}
+
+#col-sm-12{
+    border: 1px solid greenyellow;
+}
