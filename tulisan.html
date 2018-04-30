@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Murnikan Akidah</title>
+        <script src="js/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    </head>
+    <body>
+
+    <div class="container"> 
+        <div class="page-top" align="center">
+        <img src="img/d.png" width="100%" height="250px" > </img>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+             <div class="navbar-header">
+                 <a class="navbar-brand" href="#">RemajaIslam.com</a>
+             </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Akidah.html">Aqidah & Tauhid</a></li>
+                <li><a href="fikih.html">Fiqih</a></li>
+                <li><a href="nufus.html">Tazkiyatun nufus</a></li>
+                <li><a href="Tulisan.html">Tulisan Ulama</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="col-sm-9">
+            <h1 class="warna3">Tulisan Ulama</h1><br>
+            <p><img src="img/a.jpg" alt="Akhlak dan Akidah" style="width:150px;float:left;">
+            <br><br>
+            <strong>N0.1</strong>
+            <br><strong> Penulis :</strong> Ustadz Yazid bin Abdul Qodir Jawas
+            <br><strong> Judul :</strong> Adab & Akhlak Penuntut Ilmu
+            <br><strong> Kategori :</strong> Tazkiyatun Nufs
+            <br><strong> Harga :</strong> Rp 25.000
+             
+            <br><br><br>
+            <br><br><br>
+
+            <p><img src="img/C.jpg" alt="Akhlak dan Akidah" style="width:150px;float:left;">
+            <br><br>
+            <strong>N0.2</strong> 
+            <br><strong> Penulis :</strong> Ustadz Yazid bin Abdul Qodir Jawas
+            <br><strong> Judul :</strong> Intisari Arbain An-Nawawi
+            <br><strong> Kategori :</strong> Akidah & Tauhid
+            <br><strong> Harga  :</strong> Rp 20.000
+
+
+            <br><br><br>
+            <br><br><br>
+
+            <p><img src="img/b.jpg" alt="Akhlak dan Akidah" style="width:150px;float:left;">
+            <br><br>
+
+            <strong>N0.3</strong>             
+            <br><strong> Penulis :</strong> Syaikh Muhammad At- Tamimi
+            <br><strong> Judul :</strong> Kitab Tauhid
+            <br><strong> Kategori :</strong> Akidah & Tauhid
+            <br><strong> HArga :</strong> Rp 25.000
+ 
+            
+            </p>
+           
+
+        </div>
+        
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="col-sm">
+                    <center>
+                         <p ><strong> <h3> WEB TERKAIT</h3></strong></p><br>
+                         <p><a href="www.muslim.or.id">www.muslim.or.id</a></p>
+                         <p><a href="www.muslimah.or.id">www.muslimah.or.id</a></p>
+                         <p><a href="www.almanhaj.or.id">www.almanhaj.or.id</a></p>
+                         <p><a href="www.rumaysho.com">www.rumaysho.com</a></p>
+                         <p><a href="www.firanda.com">www.firanda.com</a></p>
+                         <p><a href="www.abiubaidah.com">www.abiubaidah.com</a></p>
+                         <p><a href="www.muslimafiyah.com">www.muslimafiyah.com</a></p>
+                         <p><a href="www.konsultasinsyariah.com">www.konsultansiyariah.com</a></p>
+                         <p><a href="www.manisnyaiman.com">www.manisnyaiman.com</a></p>
+                    </center>
+                 </div>
+             </div> 
+         </div>
+     </div>
+
+     <br><br>
+     <div class="col-sm">
+			<h1>Daftar Buku</h1>
+			<input type="number" name="txt-number1" class="form-control Number1" placeholder="NumberBook" />
+			
+			<button class="btn btn-sm btn-success tambah">Tambah</button>
+			<h2 class="hasil"></h2>
+
+			<hr />
+			<table class="table table-bordered tbhasil">
+				<thead>
+					<tr>
+						<td>No</td>
+						<td>Hasil</td>
+						<td>Buku</td>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+	</div>
+
+     <br>
+    <div class="container">
+        <footer align="center">
+            <p>&copy;Copyright <strong><i>By Andhika Ryan<i></strong></a></p> 
+        </footer>
+    </div>
+    
+    </body>
+</html>
+<script type="text/javascript">
+	
+	$(".tambah").click(function(){
+		var hasil = parseFloat($(".Number1").val()) , hasilbil = "";
+        if (hasil == 1){
+			bilangan = "Adab & Akhlak Penuntut Ilmu";
+		}else if (hasil == 2){
+			bilangan = "Intisari Arbain An-Nawawi";
+        }else if (hasil == 3){
+            bilangan = "Kitab Tauhid";}
+        else 
+            bilangan = "Belum Ada";
+		
+		
+
+		$('.tbhasil').append("<tr><td>"+($(".tbhasil>tbody tr").length + 1)+"</td><td>"+hasil+"</td><td>"+bilangan+"</td></tr>");
+	});
+</script>
