@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pencarian Buku</title>
+    <script src="bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+
+<body>
+  <div class="container"> 
+        <div class="page-top" align="center">
+        <img src="img/d.png" width="100%" height="250px" > </img>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+             <div class="navbar-header">
+                 <a class="navbar-brand" href="#">RemajaIslam.com</a>
+             </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Akidah.html">Aqidah & Tauhid</a></li>
+                <li><a href="fikih.html">Fiqih</a></li>
+                <li><a href="nufus.html">Tazkiyatun nufus</a></li>
+                <li><a href="Tulisan.html">Tulisan Ulama</a></li>
+                <li><a href="cari.html">Pencarian BUku</a></li>
+            </ul>
+        </div>
+    </nav>
+
+		<div class="col-md-9">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2 class="panel-title">Ketik Judul Buku</h2>
+				</div>
+				<div class="panel-body">
+					<div class="container-fluid">
+						<input type="text" id="myInput" onkeyup="myFunction()" placeholder="cari . . ." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:100%;">Buku Terkait</th>
+  </tr>
+  <tr>
+    <td>Adab dan Akhlak penuntut ilmu</td>
+  </tr>
+  <tr>
+    <td>Kitab Tauhid</td>
+  </tr>
+  <tr>
+    <td>Intisari Arbain an-Nawawi</td>
+  </tr>
+  <tr>
+    <td>Syarah Ushul Tsalatsah</td>
+  </tr>
+  <tr>
+    <td>Syarah Aqidah Salaf</td>
+  </tr>
+  <tr>
+    <td>Fikih konteporer</td>
+  </tr>
+  <tr>
+    <td>Pengantin Mahkota</td>
+  </tr>
+  <tr>
+    <td>Qowaidul Musla</td>
+  </tr>
+  <tr>
+    <td>Pembatal Keislaman</td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+					</div>
+				</div>
+			</div>
+		</div>						
+<div class="row">
+            <div class="col-sm-3">
+                <div class="col-sm">
+                    <center>
+                         <p ><strong> <h3> WEB TERKAIT</h3></strong></p><br>
+                         <p><a href="www.muslim.or.id">www.muslim.or.id</a></p>
+                         <p><a href="www.muslimah.or.id">www.muslimah.or.id</a></p>
+                         <p><a href="www.almanhaj.or.id">www.almanhaj.or.id</a></p>
+                         <p><a href="www.rumaysho.com">www.rumaysho.com</a></p>
+                         <p><a href="www.firanda.com">www.firanda.com</a></p>
+                         <p><a href="www.abiubaidah.com">www.abiubaidah.com</a></p>
+                         <p><a href="www.muslimafiyah.com">www.muslimafiyah.com</a></p>
+                         <p><a href="www.konsultasinsyariah.com">www.konsultansiyariah.com</a></p>
+                         <p><a href="www.manisnyaiman.com">www.manisnyaiman.com</a></p>
+                    </center>
+
+                 </div>
+                 <div id="piechart"></div>
+<script type="text/javascript" src="loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Laguange', 'Users'],
+  ['Ushul tslatsah', 744058],
+  ['Kitab Tauhid', 740610],
+  ['Arbain Nawawi', 478153],
+  ['Pengantin  Mahkota', 330259]
+
+]); // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Buku terlaris dan Dikaji oleh asatidz', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+             </div>
+ </div>
+    </div>
+    <br>
+    <div class="container">
+        <footer align="center">
+            <p>&copy;Copyright <strong><i>By Andhika Ryan<i></strong></a></p> 
+        </footer>
+    </div>
+</body>
+</html>
+
+
