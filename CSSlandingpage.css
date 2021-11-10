@@ -1,0 +1,109 @@
+body {
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-family: "Calligraffitti";
+  font-size: 22px;
+}
+
+.titletop {
+  font-size: 26px;
+}
+
+.bgtop {
+  background-image: url("./asset/nasa.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+.judul {
+  font-family: "caveat";
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  top: 45%;
+  position: absolute;
+  transform: scale(0.8);
+}
+.imgjen {
+  width: 200px;
+}
+
+#portofolio {
+  width: 100%;
+  padding: 2em 0;
+}
+.containerimg {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.img-porto {
+  max-width: 300px;
+  display: inline-block;
+  width: 90%;
+  vertical-align: middle;
+  margin: 0.8em;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  border: solid 1px;
+  transition-duration: 0.5s;
+}
+.img-porto:hover {
+  transform: scale(1.1);
+}
+
+.kursi2020 {
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.kursi2020:hover {
+  transform: translate(10px);
+}
+.kursi {
+  max-width: 350px;
+  width: 90%;
+}
+.asmaulhusna {
+  max-width: 400px;
+  width: 90%;
+  margin-left: 1em;
+  border-radius: 10px;
+  border: solid 1px;
+}
+
+.fikih2020 {
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.fikih2020:hover {
+  transform: translate(-10px);
+}
+
+.new2021 {
+  background-color: rgb(244 244 245);
+  margin-top: 7em;
+}
+#portofolio {
+  width: 100%;
+  padding: 2em 0;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.img-tim {
+  max-width: 300px;
+  display: inline-block;
+  width: 90%;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.blockquote {
+  font-size: 15px;
+}
