@@ -104,8 +104,14 @@ body {
   margin: 0 auto;
   margin-bottom: 2em;
 }
+
 .blockquote {
   font-size: 15px;
+}
+
+.quoteother {
+  width: 350px;
+  margin: auto;
 }
 
 .navbar {
@@ -144,4 +150,10 @@ body {
 .linka {
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 600px) {
+  .quoteother {
+    width: 960px;
+  }
 }
